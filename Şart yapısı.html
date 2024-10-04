@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kontrol(){
+            let dogumtarihi,yas;
+
+            dogumtarihi=parseInt(document.getElementById("dogumtarihi").value);
+            yas=2024-dogumtarihi;
+
+            if(yas>=18){
+                alert("Yaşınız: "+yas+" Bu siteye girebilirsiniz");
+            }
+            else{
+                alert("Yaşınız: "+yas+" Bu siteye girişiniz yasak");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center ;">Sitemize Hoşgeldiniz</h1>
+    <label for="">Doğum Tarihi(Yıl)</label>
+    <input type="text" name="dogumtarihi" id="dogumtarihi" maxlength="4">
+    <button onclick="kontrol()">Giriş</button>
+</body>
+</html>
